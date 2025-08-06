@@ -4,6 +4,8 @@ import Badge from "@/components/Badge.astro";
 import LinkedInIcon from "@/components/icons/LinkedIn.astro";
 import MailIcon from "@/components/icons/Mail.astro";
 import SocialPill from "@/components/SocialPill.astro";
+import GitHubIcon from "@/components/icons/GitHub.astro";
+let Years = new Date().getFullYear() - 2018;
 ---
 
 <div class="max-w-xl">
@@ -30,8 +32,9 @@ import SocialPill from "@/components/SocialPill.astro";
   <p
     class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
   >
-    +7 años de experiencia. <strong>Desarrollador Backend</strong> de Villa Ángela,
-    Chaco, Argentina 🇦🇷. Especializado en el desarrollo de aplicaciones web.
+    +{Years} años de experiencia. <strong>Desarrollador Backend</strong>
+    de Villa Ángela, Chaco, Argentina 🇦🇷. Especializado en el desarrollo de aplicaciones
+    web.
   </p>
   <nav class="flex flex-wrap gap-4 mt-8">
     <!-- <SocialPill href="mailto:german.e.escobar@gmail.com">
@@ -41,6 +44,10 @@ import SocialPill from "@/components/SocialPill.astro";
     <SocialPill href="https://www.linkedin.com/in/germanio7/">
       <LinkedInIcon class="size-4" />
       LinkedIn
+    </SocialPill>
+    <SocialPill href="https://github.com/germanio7">
+      <GitHubIcon class="size-4" />
+      GitHub
     </SocialPill>
   </nav>
 </div>
